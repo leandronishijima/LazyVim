@@ -6,3 +6,4 @@ local keymap = vim.keymap
 
 -- BUffers
 keymap.set("n", "<leader>by", '<cmd>let @+ = expand("%")<cr>', { desc = "Copy relative path" })
+keymap.set("n", "<leader>bc", "<cmd>bw<cr>", { desc = "Close buffer" })
