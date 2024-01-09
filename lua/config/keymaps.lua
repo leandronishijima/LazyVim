@@ -5,3 +5,6 @@
 
 -- BUffers
 vim.keymap.set("n", "<leader>by", '<cmd>let @+ = expand("%:.")<cr>', { desc = "Copy relative path" })
+
+--- Hop.nvim
+vim.keymap.set("", "f", "<cmd>HopWord<cr>", { desc = "Hint words (Hop.nvim)" })
