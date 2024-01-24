@@ -20,3 +20,5 @@ end, { desc = "Toggle Focus Neotree" })
 
 -- No-neck-pain
 vim.keymap.set("n", "<leader>wc", "<cmd>NoNeckPain<cr>", { desc = "Toggle No-neck-pain" })
+vim.keymap.set("n", "<leader>w+", "<cmd>NoNeckPainWidthUp<cr>", { desc = "Increase width no-neck-pain window" })
+vim.keymap.set("n", "<leader>w-", "<cmd>NoNeckPainWidthDown<cr>", { desc = "Increase width no-neck-pain window" })
