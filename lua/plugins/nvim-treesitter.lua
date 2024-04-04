@@ -20,6 +20,7 @@ return {
       "heex",
       "kdl",
       "ruby",
+      "gleam",
     },
   },
 }

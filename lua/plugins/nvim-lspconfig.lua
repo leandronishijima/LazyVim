@@ -1,4 +1,5 @@
 local lspconfig = require("lspconfig")
+local util = require("lspconfig.util")
 
 return {
   {
@@ -18,6 +19,13 @@ return {
         rubocop = {
           cmd = { os.getenv("HOME") .. "/.asdf/shims/rubocop", "--lsp", "--stderr", "--fail-level", "fatal" },
           root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
+        },
+        gleam = {
+          cmd = { "gleam", "lsp" },
+          filetypes = { "gleam" },
+          root_dir = function(fname)
+            return util.root_pattern("gleam.toml", ".git")(fname)
+          end,
         },
       },
     },
