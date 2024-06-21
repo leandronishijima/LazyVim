@@ -22,11 +22,3 @@ end, { desc = "Toggle Focus Neotree" })
 vim.keymap.set("n", "<leader>wc", "<cmd>NoNeckPain<cr>", { desc = "Toggle No-neck-pain" })
 vim.keymap.set("n", "<leader>w+", "<cmd>NoNeckPainWidthUp<cr>", { desc = "Increase width no-neck-pain window" })
 vim.keymap.set("n", "<leader>w-", "<cmd>NoNeckPainWidthDown<cr>", { desc = "Increase width no-neck-pain window" })
-
--- Telescope
-vim.keymap.set(
-  "n",
-  "<leader>/",
-  "<cmd>lua require('telescope.builtin').live_grep({ additional_args = { '--fixed-strings' }})<CR>",
-  { desc = "Grep (Root dir)" }
-)

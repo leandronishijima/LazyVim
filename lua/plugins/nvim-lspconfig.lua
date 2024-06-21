@@ -17,7 +17,7 @@ return {
           },
         },
         rubocop = {
-          cmd = { os.getenv("HOME") .. "/.asdf/shims/rubocop", "--lsp", "--stderr", "--fail-level", "fatal" },
+          cmd = { os.getenv("HOME") .. "/.asdf/shims/rubocop", "--lsp" },
           root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
         },
         gleam = {
