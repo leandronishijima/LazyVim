@@ -6,8 +6,20 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        ruby_lsp = {
+          cmd = { os.getenv("HOME") .. "/.asdf/shims/ruby-lsp" },
+          filetypes = { "ruby", "rakefile" },
+          root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
+          settings = {
+            ruby_lsp = {
+              autoformat = true,
+            },
+          },
+        },
         solargraph = {
+          autostart = false,
           cmd = { os.getenv("HOME") .. "/.asdf/shims/solargraph", "stdio" },
+          filetypes = { "ruby", "rakefile" },
           root_dir = lspconfig.util.root_pattern("Gemfile", ".git", "."),
           settings = {
             solargraph = {
