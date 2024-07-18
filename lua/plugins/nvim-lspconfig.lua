@@ -6,6 +6,9 @@ return {
     "neovim/nvim-lspconfig",
     opts = {
       servers = {
+        sourcekit = {
+          lspconfig.sourcekit.setup({}),
+        },
         ruby_lsp = {
           cmd = { os.getenv("HOME") .. "/.asdf/shims/ruby-lsp" },
           filetypes = { "ruby", "rakefile" },
