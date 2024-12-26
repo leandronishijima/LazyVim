@@ -6,3 +6,6 @@ local opt = vim.opt
 
 opt.relativenumber = false
 vim.g.root_spec = { "cwd" }
+
+-- Disable Scrool animation
+vim.g.snacks_animate = false
