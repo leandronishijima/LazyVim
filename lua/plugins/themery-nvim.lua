@@ -18,6 +18,7 @@ return {
         "rose-pine-main",
         "rose-pine-moon",
         "rose-pine-dawn",
+        "nordic",
       },
     })
   end,
